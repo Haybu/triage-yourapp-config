@@ -1,1 +1,13 @@
-app: is-yourapp
+app: is-yourapp-nonprod-all
+
+---
+spring:
+  profiles: dev
+
+app: is-yourapp-nonprod-dev
+
+---
+spring:
+  profiles: test
+
+app: is-yourapp-nonprod-test
